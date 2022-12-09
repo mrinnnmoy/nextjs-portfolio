@@ -4,9 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-red-500">
-        Welcome to my Portfolio.
-      </h1>
+      <Head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
     </div>
   );
 }
