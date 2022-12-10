@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 
+import {
+    FaBars,
+    FaTimes,
+    FaFacebook,
+    FaGithub,
+    FaTwitter,
+    FaLinkedin,
+} from "react-icons/fa";
+
 const Navbar = () => {
 
     const links = [
@@ -42,6 +51,25 @@ const Navbar = () => {
                             </Link>
                         ))}
                     </ul>
+
+                    <div className="md:hidden">
+                        <FaBars size={30} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur">
+                <div className="fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500">
+                    <div>
+                        <div className="flex w-full items-center justify-between">
+                            <Link href="/#home">
+                                <h2 className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">Mrinmoy</h2>
+                            </Link>
+                            <div className="p-3 cursor-pointer">
+                                <FaTimes size={30} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
