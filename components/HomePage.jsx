@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImage from "../public/assets/heroImage.png";
+import { BiDownload } from "react-icons/bi";
 import { MdExpandMore } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,7 @@ const HomePage = () => {
                             {/* Add a resume */}
                             Resume
                             <span className="-rotate-90 duration-100 ease-in group-hover:-rotate-0">
-                                <MdExpandMore size={25} />
+                                <BiDownload size={25} />
                             </span>
                         </div>
                     </Link>
