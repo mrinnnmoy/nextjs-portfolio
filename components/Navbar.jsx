@@ -10,6 +10,8 @@ import {
     FaLinkedin,
 } from "react-icons/fa";
 
+import { SiHashnode } from "react-icons/si";
+
 const Navbar = () => {
     const [navigation, setNavigation] = useState(false);
 
@@ -78,15 +80,54 @@ const Navbar = () => {
                                     className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">Mrinmoy</h2>
                             </Link>
                             <div onClick={() => setNavigation(false)}
-                            className="p-3 cursor-pointer">
+                                className="p-3 cursor-pointer">
                                 <FaTimes size={30} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-24 flex flex-col h-fit gap-20">
+                        <ul className="uppercase">
+                            {links.map(({ id, link }) => (
+                                <Link key={id} href={`/#${link}`}>
+                                    <li onClick={() => setNavigation(false)}
+                                        className="py-4 text-2xl tracking-wider cursor-pointer"
+                                    >
+                                        {link}
+                                    </li>
+                                </Link>
+                            ))}
+                        </ul>
+
+                        <div>
+                            <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
+                                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                    <Link href="https://www.linkedin.com/in/mrinnnmoy/" target="_blank">
+                                        <FaLinkedin size={25} />
+                                    </Link>
+                                </div>
+                                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                    <Link href="http://twitter.com/mrinnnmoy" target="_blank">
+                                        <FaTwitter size={25} />
+                                    </Link>
+                                </div>
+                                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                    <Link href="https://mrinnnmoy.hashnode.dev/" target="_blank">
+                                        <SiHashnode size={25} />
+                                    </Link>
+                                </div>
+                                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                    <Link href="https://github.com/mrinnnmoy" target="_blank">
+                                        <FaGithub size={25} />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Navbar;
