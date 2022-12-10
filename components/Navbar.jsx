@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     FaBars,
@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+    const [navigation, setNavigation] = useState(false);
 
     const links = [
         {
@@ -52,20 +53,32 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="md:hidden">
-                        <FaBars size={30} />
-                    </div>
+                    {!navigation && (
+                        <div className="md:hidden cursor-pointer" onClick={() => setNavigation(true)}>
+                            <FaBars size={30} />
+                        </div>
+                    )}
                 </div>
             </div>
 
-            <div className="md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur">
-                <div className="fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500">
+            <div className={
+                navigation
+                    ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur"
+                    : ""
+            }>
+                <div className={
+                    navigation
+                        ? "fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500"
+                        : "fixed top-0 left-[-100%] p-10 h-full ease-in duration-500"
+                }>
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Link href="/#home">
-                                <h2 className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">Mrinmoy</h2>
+                                <h2 onClick={() => setNavigation(false)}
+                                    className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">Mrinmoy</h2>
                             </Link>
-                            <div className="p-3 cursor-pointer">
+                            <div onClick={() => setNavigation(false)}
+                            className="p-3 cursor-pointer">
                                 <FaTimes size={30} />
                             </div>
                         </div>
