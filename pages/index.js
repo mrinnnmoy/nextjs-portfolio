@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import HomePage from "../components/HomePage";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <title>Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <HomePage />
     </div>
   );
 }

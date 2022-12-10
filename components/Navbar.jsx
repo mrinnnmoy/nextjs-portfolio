@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import {
     FaBars,
     FaTimes,
-    FaFacebook,
     FaGithub,
     FaTwitter,
     FaLinkedin,
@@ -22,11 +21,11 @@ const Navbar = () => {
         },
         {
             id: 2,
-            link: "portfolio",
+            link: "experience",
         },
         {
             id: 3,
-            link: "experience",
+            link: "portfolio",
         },
         {
             id: 4,
