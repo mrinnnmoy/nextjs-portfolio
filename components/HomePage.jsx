@@ -13,7 +13,7 @@ const HomePage = () => {
                     <Image src={heroImage} alt="profileImg" />
                 </div>
 
-                <h1 className="uppercase font-bold text-gray-700 text-7xl">
+                <h1 className="uppercase font-bold text-gray-700 text-6xl">
                     Full Stack Developer
                 </h1>
 
