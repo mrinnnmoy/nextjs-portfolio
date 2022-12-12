@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {
     FaBars,
@@ -13,6 +13,15 @@ import { SiHashnode } from "react-icons/si";
 
 const Navbar = () => {
     const [navigation, setNavigation] = useState(false);
+    const [pageScroll, setPageScroll] = useState(false);
+
+    useEffect(() => {
+        const sub = window.addEventListener("scroll", () =>
+            setPageScroll(window.scrollY >= 90)
+        );
+
+        return sub;
+    }, []);
 
     const links = [
         {
@@ -38,7 +47,8 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="w-full h-20 z-10 fixed bg-white text-black duration-300 ease-in">
+        <div className={`w-full h-20 z-10 fixed bg-white text-black duration-300 ease-in ${pageScroll && "bg-black text-[#fff]"
+            }`}>
             <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
                 <Link href="/#home">
                     <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">Mrinmoy</h1>
