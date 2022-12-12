@@ -50,7 +50,7 @@ const Portfolio = () => {
 
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
                     {portfolios.map(({ id, title, imageSrc, url }) => (
-                        <Link key={id} href={`/portfolio/${url}`}>
+                        <Link key={id} href={`${url}`}>
                             <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
                                 <Image
                                     src={imageSrc}
