@@ -36,19 +36,19 @@ const Blog = () => {
             id: 4,
             title: "SOLID DESIGN",
             imageSrc: article6,
-            src: "https://mrinnnmoy.hashnode.dev/solid-principles-for-programming-and-software-design",
+            url: "https://mrinnnmoy.hashnode.dev/solid-principles-for-programming-and-software-design",
         },
         {
             id: 5,
             title: "Introduction to HTML for beginners.",
             imageSrc: article7,
-            src: "https://mrinnnmoy.hashnode.dev/introduction-to-html-for-beginners",
+            url: "https://mrinnnmoy.hashnode.dev/introduction-to-html-for-beginners",
         },
         {
             id: 6,
             title: "Getting Started with CSS.",
             imageSrc: article8,
-            src: "https://mrinnnmoy.hashnode.dev/getting-started-with-css",
+            url: "https://mrinnnmoy.hashnode.dev/getting-started-with-css",
         },
     ];
 

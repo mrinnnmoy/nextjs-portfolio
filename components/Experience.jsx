@@ -60,20 +60,20 @@ const Experience = () => {
                 <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
                     experience
                 </h2>
-                <p className="py-6 max-w-lg">
+                <p className="py-4 max-w-lg">
                     To me life is all about overcoming problems and taking on new challenges.
-                    Currently, polishing my skills on web development (MERN), DSA,
-                    and writing tech articles. And hope to make a significant contribution
-                    to technological advancements in the future.
+                    Currently, polishing my skills on web development (MERN), DSA, and writing
+                    tech articles. And hope to make a significant contribution to technological
+                    advancements in the future.
                 </p>
 
-                <div className="grid lg:grid-cols-4 gap-8">
+                <div className="grid lg:grid-cols-8 gap-8">
                     {experiences.map(({ id, title, src }) => (
                         <div
                             key={id}
                             className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 odd:shadow-rose-400 even:shadow-blue-400">
-                            <Image src={src} width="64px" height="64px" alt={title} />
-                            <h3 className="font-light">{title}</h3>
+                            <Image src={src} alt={title} />
+                            {/* <h3 className="font-light">{title}</h3> */}
                         </div>
                     ))}
                 </div>
