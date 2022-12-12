@@ -61,7 +61,6 @@ const Experience = () => {
                     experience
                 </h2>
                 <p className="py-6 max-w-lg">
-                    A senior, pursuing Bachelors in Electronics & Communication Engineering.
                     To me life is all about overcoming problems and taking on new challenges.
                     Currently, polishing my skills on web development (MERN), DSA,
                     and writing tech articles. And hope to make a significant contribution

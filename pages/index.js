@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Experience from "../components/Experience";
 import HomePage from "../components/HomePage";
+import Portfolio from "../components/Portfolio";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <HomePage />
       <Experience />
+      <Portfolio />
     </div>
   );
 }
