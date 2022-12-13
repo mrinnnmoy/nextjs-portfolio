@@ -24,9 +24,8 @@ const HomePage = () => {
                 </p>
 
                 <div className="flex items-center justify-center gap-10">
-                    <Link href='/resume.pdf' download={true}>
+                    <Link href="/MrinmoyPorel_CV.pdf" download={true}>
                         <div className="group flex items-center justify-center my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
-                            {/* Add a resume */}
                             Resume
                             <span className="-rotate-90 duration-100 ease-in group-hover:-rotate-0">
                                 <BiDownload size={25} />
