@@ -7,17 +7,17 @@ import Link from "next/link";
 
 const HomePage = () => {
     return (
-        <div id="home" className="h-screen w-full text-center">
+        <div id="home" className="h-screen w-full text-center bg-slate-900">
             <div className="max-w-screen-xl mx-auto w-full h-full pt-24 p-4 flex flex-col justify-around items-center">
                 <div className="w-64 h-64 mx-auto overflow-hidden rounded-xl">
                     <Image src={heroImage} alt="profileImg" />
                 </div>
 
-                <h1 className="uppercase font-bold text-gray-700 text-6xl">
+                <h1 className="uppercase font-bold text-6xl text-blue-500">
                     Frontend Developer
                 </h1>
 
-                <p className="text-gray-600 text-xl max-w-sm mx-auto">
+                <p className="text-white text-xl max-w-sm mx-auto">
                     Hi 👋, I am Mrinmoy Porel. I love building web application
                     using technologies like React JS, Next JS, Tailwind, Sass 
                     and Node JS.

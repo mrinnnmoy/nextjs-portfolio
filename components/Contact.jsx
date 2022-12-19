@@ -7,20 +7,20 @@ import { FaFacebook, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div id="contact" className="w-full">
+        <div id="contact" className="w-full bg-slate-900">
             <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
                 <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
                     contact
                 </h2>
 
-                <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 bg-white mt-4">
+                <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 bg-slate-800 rounded-3xl mt-4">
                     <div className="w-full md:w-1/2 h-full rounded-xl p-4">
                         <Image
                             src={contactus}
                             alt="man with laptop"
                             className="rounded-xl"
                         />
-                        <p className="pt-2 pb-8">
+                        <p className="pt-2 pb-8 text-white text-base">
                             I am open to talk regarding freelancing or full-time
                             opportunities. Feel free to contact me using your preferred
                             medium.
@@ -29,17 +29,17 @@ const Contact = () => {
                         <div className="grid grid-cols-3 mx-auto w-4/5 gap-10">
                             <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                                 <Link href="https://linkedin.com/in/mrinnnmoy/" target="_blank">
-                                    <FaLinkedin size={25} />
+                                    <FaLinkedin size={25} style={{color:"white"}}/>
                                 </Link>
                             </div>
                             <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                                 <Link href="https://twitter.com/mrinnnmoy/" target="_blank">
-                                    <FaTwitter size={25} />
+                                    <FaTwitter size={25} style={{color:"white"}}/>
                                 </Link>
                             </div>
                             <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                                 <Link href="https://github.com/mrinnnmoy/" target="_blank">
-                                    <FaGithub size={25} />
+                                    <FaGithub size={25} style={{color:"white"}}/>
                                 </Link>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                             >
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                                     <div className="flex flex-col">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 text-white font-light">
                                             name
                                         </label>
                                         <input
@@ -64,7 +64,7 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="flex flex-col">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 text-white font-light">
                                             phone
                                         </label>
                                         <input
@@ -75,7 +75,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="flex flex-col col-span-2">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 text-white font-light">
                                             email
                                         </label>
                                         <input
@@ -85,7 +85,7 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="flex flex-col col-span-2">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 text-white font-light">
                                             message
                                         </label>
                                         <textarea

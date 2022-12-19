@@ -79,12 +79,12 @@ const Experience = () => {
     ];
 
     return (
-        <div id="experience" className="w-full">
+        <div id="experience" className="w-full bg-slate-900">
             <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
                 <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
                     experience
                 </h2>
-                <p className="py-4 max-w-lg">
+                <p className="py-4 max-w-full text-white text-xl mx-auto">
                     To me life is all about overcoming problems and taking on new challenges.
                     Currently, polishing my skills on web development (MERN), DSA, and writing
                     tech articles. And hope to make a significant contribution to technological
@@ -97,7 +97,7 @@ const Experience = () => {
                             key={id}
                             className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 odd:shadow-rose-400 even:shadow-blue-400">
                             <Image src={src} height={400} width={40} alt={title} />
-                            <h3 className="font-light">{title}</h3>
+                            <h3 className="font-light text-white">{title}</h3>
                         </div>
                     ))}
                 </div>

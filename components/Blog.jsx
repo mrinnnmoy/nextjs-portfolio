@@ -53,12 +53,12 @@ const Blog = () => {
     ];
 
     return (
-        <div id="blog" className="w-full">
+        <div id="blog" className="w-full bg-slate-900">
             <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
                 <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
                     Blog
                 </h2>
-                <p className="py-4 max-w-lg">
+                <p className="py-4 max-w-full text-white text-xl mx-auto">
                     I love documenting my learnings and these are few articles that i have written on my personal blog using Hashnode.
                 </p>
 
@@ -73,7 +73,7 @@ const Blog = () => {
                                     className="rounded-md duration-200 
                   hover:scale-110"
                                 />
-                                <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
+                                <h2 className="text-center text-base capitalize my-4 font-light text-white duration-200 group-hover:underline underline-offset-4">
                                     {title}
                                 </h2>
                             </div>

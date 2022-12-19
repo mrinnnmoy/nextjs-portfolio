@@ -38,12 +38,12 @@ const Portfolio = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full">
+        <div id="portfolio" className="w-full bg-slate-900">
             <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
                 <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
                     portfolio
                 </h2>
-                <p className="py-4 max-w-lg">
+                <p className="py-4 max-w-full text-white text-xl mx-auto">
                     My portfolio is a representation of all my works that I've learned and 
                     accomplished as a software developer in the last 6 months.
                 </p>
@@ -58,7 +58,7 @@ const Portfolio = () => {
                                     className="rounded-md duration-200 
                   hover:scale-110"
                                 />
-                                <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
+                                <h2 className="text-center text-base capitalize my-4 font-light text-white duration-200 group-hover:underline underline-offset-4">
                                     {title}
                                 </h2>
                             </div>
