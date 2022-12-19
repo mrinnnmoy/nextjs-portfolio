@@ -62,17 +62,17 @@ const Experience = () => {
             src: tailwind,
         },
         {
-            id: 9,
+            id: 10,
             title: "Sass",
             src: sass,
         },
         {
-            id: 10,
+            id: 11,
             title: "npm",
             src: npm,
         },
         {
-            id: 10,
+            id: 12,
             title: "Java",
             src: java,
         },
