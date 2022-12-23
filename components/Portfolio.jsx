@@ -2,9 +2,11 @@ import React from "react";
 
 import { MdExpandMore } from "react-icons/md";
 
-import automart from "../public/assets/portfolio/automart.jpg";
-import urbanash from "../public/assets/portfolio/urbanash.jpg";
+// import automart from "../public/assets/portfolio/automart.jpg";
+// import urbanash from "../public/assets/portfolio/urbanash.jpg";
 import fitclub from "../public/assets/portfolio/fitclub.jpg";
+import learningx from "../public/assets/portfolio/learningx.jpg";
+import openart from "../public/assets/portfolio/openart.jpg";
 import weatherapp from "../public/assets/portfolio/weather-app.jpg";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,21 +15,21 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            title: "AutoMart",
-            imageSrc: automart,
+            title: "FitClub",
+            imageSrc: fitclub,
             url: "https://mrinnnmoy.github.io/AutoMart/",
         },
         {
             id: 2,
-            title: "UrbanAsh",
-            imageSrc: urbanash,
-            url: "https://mrinnnmoy.github.io/urbanAsh-frontend/",
+            title: "LearningX",
+            imageSrc: learningx,
+            url: "https://mrinnnmoy-learningx.netlify.app/",
         },
         {
             id: 3,
-            title: "Fitclub",
-            imageSrc: fitclub,
-            url: "https://getfitclub.netlify.app/",
+            title: "OpenArt",
+            imageSrc: openart,
+            url: "https://mrinnnmoy-openart.netlify.app/",
         },
         {
             id: 4,
